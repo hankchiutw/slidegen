@@ -1,0 +1,22 @@
+{
+  "name": "slidegen",
+  "version": "0.1.0",
+  "description": "generate pptx file from docx file",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "Electron",
+    "rtmp"
+  ],
+  "author": "Hank",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  },
+  "dependencies": {
+    "mammoth": "^1.2.5",
+    "officegen": "^0.4.0"
+  }
+}

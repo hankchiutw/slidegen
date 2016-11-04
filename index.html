@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>pptx產生器</title>
+
+    <link rel="stylesheet" href="./css/renderer.css">
+  </head>
+  <body>
+    <div id='main-container'>
+        <p>
+            <input type='file' id='submitAnchor' accept='.docx'></input>
+        </p>
+
+        <div id='rawText'></div>
+        <div id='parsedText'></div>
+    </div>
+    <div id='message'>
+        <div>
+            <p>使用方式：</p>
+            <ol>
+                <li>點選docx檔案</li>
+                <li>等待結果</li>
+            </ol>
+        </div>
+    </div>
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./js/renderer.js')
+  </script>
+</html>
