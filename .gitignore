@@ -66,3 +66,4 @@ public/js/app.js
 *.log
 
 faith-rtmpdump-*
+dist

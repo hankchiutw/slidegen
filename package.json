@@ -4,7 +4,16 @@
   "description": "generate pptx file from docx file",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "debug": "concurrently 'electron --debug .' 'electron-inspector'",
+    "pack": "build --dir",
+    "build": "build"
+  },
+  "build": {
+    "appId": "hankchiutw.slidegen",
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    }
   },
   "keywords": [
     "Electron",
@@ -14,7 +23,9 @@
   "author": "Hank",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron-prebuilt": "^1.2.0"
+    "electron-inspector": "^0.1.3",
+    "electron-prebuilt": "^1.2.0",
+    "electron-rebuild": "^1.3.0"
   },
   "dependencies": {
     "mammoth": "^1.2.5",
